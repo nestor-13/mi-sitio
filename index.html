@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Heladería Delicia</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
+
   <header>
-    <h1>🍨 HELADERIA EL REFRESCANTE</h1>
-    <p>¡Los mejores sabores para refrescar tu día! NO esperes mas mas    pide el tuyo</p>
+    <h1>🍨 HELADOS EL REFRESCANTE</h1>
+    <p>¡Los mejores sabores para refrescar tu día! <BR> NO ESPERES MAS  PRONTO CON MUCHOS SABORES MAS </p>
   </header>
 
   <section class="portada">
@@ -18,28 +19,22 @@
 
   <section class="productos">
     <h2>Nuestros Helados</h2>
-    <div class="lista-productos">
-      <div class="producto">
-        <h3>Vainilla</h3>
-        <p>Cremoso y clásico</p>
-      </div>
-      <div class="producto">
-        <h3>Chocolate</h3>
-        <p>Intensamente delicioso</p>
-      </div>
-      <div class="producto">
-        <h3>Fresa</h3>
-        <p>Natural y dulce</p>
-      </div>
+    <div id="lista-productos" class="lista-productos">
+      <!-- Aquí se insertan los productos desde productos.json -->
     </div>
   </section>
 
   <footer>
     <p>📍 Av. Principal #123 - Lima</p>
-    <p>📞 WhatsApp: 987654321</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/51955367206?text=Hola,%20quiero%20un%20helado" target="_blank">Escríbenos</a></p>
   </footer>
-  <a href="https://web.whatsapp.com/send/?phone=51955367206&text=Hola%2C+necesito+hacer+pedidos" target="_blank">
-                <b> 955367206</b>
 
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/51955367206?text=Hola,%20quiero%20un%20helado" class="whatsapp" target="_blank">
+    💬
+  </a>
+
+  <!-- Script que carga productos desde JSON -->
+  <script src="script.js"></script>
 </body>
 </html>
