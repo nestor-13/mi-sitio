@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf6f0;
+  color: #333;
+  line-height: 1.5;
+}
+
+header {
+  background: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.portada img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.productos {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.producto {
+  background: #fff;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+/* 🎯 Estilos responsivos */
+@media (max-width: 768px) {
+  .lista-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
